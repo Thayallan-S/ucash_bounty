@@ -1,12 +1,53 @@
     <!DOCTYPE html>
 <html>
   <head>
+    <style>
+.myButton {
+    background-color:#1cc74a;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:18px;
+    border:1px solid #2ec73d;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:Arial;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+    background-color:#5cbf2a;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+input{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+    width: 80%;
+}
+</style>
     <meta charset="UTF-8" />
     <title>UCASH bounty system</title>
+    <link href = "https://mlg-blockchain.github.io/Peace-Network/logo.png" rel="icon" type="image/gif">
     <script src="https://fb.me/react-0.14.6.js"></script>
     <script src="https://fb.me/react-dom-0.14.6.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
@@ -15,11 +56,11 @@
   <body>
       <center>
         <h1>Get UCASH bounties on top problems</h1>
-        <input id="inputString"></input>
-        <input id="inputNumber"></input>
-        <button id="testButton">Send</button>
-        <input placeholder="Enter your question number" type="" name="" id="numberVal"></input>
-        <button id="bId">Enter</button>
+        <input placeholder="Bounty question" class="mainInput" id="inputString"></input>
+        <input placeholder="Bounty price" class="mainInput" id="inputNumber"></input>
+        <button class="myButton" id="testButton">Send</button>
+        <input class="mainInput" placeholder="Enter your question number" type="" name="" id="numberVal"></input>
+        <button class="myButton" id="bId">Enter</button>
         <table width="500">
             <thead>
             </thead>
@@ -31,7 +72,7 @@
                 </tr>
             </tbody>
         </table>
-        <button id="oneButton">Check your responses</button>
+        <button class="myButton" id="oneButton">Check your responses</button>
         <h2 id="urRes">Your responses</h2>
         <table width="500">
             <thead>
@@ -43,8 +84,10 @@
                 </tr>
             </tbody>
         </table>
-        </center>
     <div id="example"></div>
+    <input class="mainInput" id="inputStringe"></input>
+    <button class="myButton" id="finalButton">Approve</button>
     <script type="text/javascript" src="src_hello.js"></script>
+    </center>
   </body>
 </html>
