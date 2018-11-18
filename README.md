@@ -1,2 +1,2 @@
 # ucash_bounty
-A project for BlockHack 2018
+A project for DMZ BlockHack 2018
