@@ -1,2 +1,2 @@
 # ucash_bounty
-A hackathon project
+Created at BlockHack 2018
