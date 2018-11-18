@@ -2,11 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello React</title>
+    <title>UCASH bounty system</title>
     <script src="https://fb.me/react-0.14.6.js"></script>
     <script src="https://fb.me/react-dom-0.14.6.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script type="text/babel" src="src_hello.jsx"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
@@ -14,6 +13,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
+      <center>
+        <h1>Get UCASH bounties on top problems</h1>
+        <input id="inputString"></input>
+        <input id="inputNumber"></input>
+        <button id="testButton">Send</button>
+        <table width="500">
+            <thead>
+            </thead>
+            <tbody id="mainTable">
+                <tr>
+                    <td id="bountyNumber"></td>
+                    <td id="bountyContent" class='clickable-row'></td>
+                    <td id="bountyPrice"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="oneButton">Check your responses</button>
+        <h2 id="urRes">Your responses</h2>
+        <table width="500">
+            <thead>
+            </thead>
+            <tbody id="secondTable">
+                <tr>
+                    <td id="responses" class='clickable-row'></td>
+                    <td id="peopleWhoSubmitted"></td>
+                </tr>
+            </tbody>
+        </table>
+        </center>
     <div id="example"></div>
+    <script type="text/javascript" src="src_hello.js"></script>
   </body>
 </html>
